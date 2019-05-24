@@ -49,6 +49,7 @@ export const query = graphql`
         node {
           id
           publishedAt
+          _rawMainImage(resolveReferences:{maxDepth: 4})
           mainImage {
             ...SanityImage
             alt

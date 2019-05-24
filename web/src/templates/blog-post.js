@@ -15,6 +15,7 @@ export const query = graphql`
         _id
         title
       }
+      _rawMainImage(resolveReferences:{maxDepth: 4})
       mainImage {
         ...SanityImage
         alt
